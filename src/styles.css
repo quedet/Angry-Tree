@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  line-height: 1.457;
+  color: initial;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.App {
+  padding: 1rem;
+  /* width: 100%;
+  max-width: 400px;
+  margin: 0 auto; */
+}
+.motion-animation {
+  background-color: #eee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+
+  background-color: #eee;
+}
+
+.nav-burger-text {
+  cursor: pointer;
+  padding: 0.75rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  padding: 0.75rem;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(13, 13, 146);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading h3,
+.loading p {
+  color: #fff;
+}
+
+.loading-item {
+  /* display: flex; */
+  margin: 0.75rem 0;
+}
+
+.open-modal {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+  margin: 1rem;
+  padding: 0.75rem;
+  background-color: #eee;
+  cursor: pointer;
+
+  z-index: -1;
+}
+
+.open-modal:hover,
+.close-modal:hover {
+  background-color: rgb(119, 119, 119);
+  color: #fff;
+}
+
+.close-modal {
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+  padding: 1rem 0.75rem;
+  border-radius: 100px;
+  background-color: rgb(255, 68, 68);
+  cursor: pointer;
+  color: #fff;
+}
+#modal {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  z-index: 1;
+
+  scroll-behavior: scroll-behavior;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  padding: 1rem 0;
+}
